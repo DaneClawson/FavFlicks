@@ -7,6 +7,194 @@
     <meta name="author" content="Rugder Dane Clawson">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background: #f9f9f9;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #444;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0.5rem;
+        }
+
+        nav ul li {
+            flex: 1;
+            text-align: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #666;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .pageInfo {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .share-input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .share-input textarea {
+            width: 90%;
+            max-width: 600px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .share-input button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .share-input button:hover {
+            background: #0056b3;
+        }
+
+        .feed {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .post {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .post p {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            .pageInfo {
+                font-size: 1.5rem;
+            }
+
+            .share-input textarea {
+                width: 95%;
+                font-size: 0.9rem;
+            }
+
+            .share-input button {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .post {
+                padding: 0.8rem;
+            }
+
+            footer p {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 1024px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                max-width: 1200px;
+                margin: auto;
+            }
+
+            .pageInfo {
+                font-size: 2.5rem;
+            }
+
+            .feed {
+                max-width: 1000px;
+            }
+
+            footer p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Start of the header section -->

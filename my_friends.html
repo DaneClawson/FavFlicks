@@ -6,26 +6,173 @@
     <meta name="description" content="FavFlicks is a fun and interactive platform where you can discover and rank your favorite TV shows and movies!">
     <meta name="author" content="Rugder Dane Clawson">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background: #f9f9f9;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #444;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0.5rem;
+        }
+
+        nav ul li {
+            flex: 1;
+            text-align: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #666;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        main div ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        main div ul li {
+            margin: 1rem 0;
+        }
+
+        main div ul li a {
+            text-decoration: none;
+            color: white; /* Changed text color to white */
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        main div ul li a:hover {
+            color: #00BFFF; /* Optional hover color for better contrast */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            main h2 {
+                font-size: 1.5rem;
+            }
+
+            main div ul li a {
+                font-size: 1rem;
+            }
+
+            footer p {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 1024px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                max-width: 1200px;
+                margin: auto;
+            }
+
+            main h2 {
+                font-size: 2.5rem;
+            }
+
+            main div ul li a {
+                font-size: 1.4rem;
+            }
+
+            footer p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Start of the header section -->
     <header>
         <h1>FavFlicks</h1>
-        <!--<p>Discover and rank your favorite TV shows and movies with us.</p> -->
-        
-        <!-- Navigation section -->
-        <nav> 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="create_lists.html">Create Lists</a></li>
-                <li><a href="my_lists.html">My Lists</a></li>
-                <li><a href="my_friends.html">My Friends</a></li>
-                <li><a href="share.html">Share</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <link rel="stylesheet" href="index.css">
-            </ul>
-        </nav>
     </header>
+
+    <!-- Navigation section -->
+    <nav> 
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="create_lists.html">Create Lists</a></li>
+            <li><a href="my_lists.html">My Lists</a></li>
+            <li><a href="my_friends.html">My Friends</a></li>
+            <li><a href="share.html">Share</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+        </ul>
+    </nav>
 
     <!-- Start of the main content section -->
     <main>
