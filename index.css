@@ -129,3 +129,47 @@ footer a {
 footer a:hover {
     color: #fff;
 }
+/* Feed container */
+.feed {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    background-color: #f5f8fa;
+    padding: 10px;
+}
+
+/* Individual post styling */
+.post {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post p:first-of-type {
+    font-size: 14px;
+    color: #657786;
+    margin: 0 0 5px;
+}
+
+.post p:last-of-type {
+    font-size: 16px;
+    color: #14171a;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Links for usernames */
+.post strong {
+    color: #1da1f2;
+    font-weight: bold;
+}
+
+/* Hover effect for posts */
+.post:hover {
+    background-color: #f0f0f0;
+}
