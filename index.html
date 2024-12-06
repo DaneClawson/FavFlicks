@@ -94,13 +94,22 @@
             margin: 0.5rem 0;
         }
 
-        a {
-            color: #007BFF;
+        .center-button {
+            display: block;
+            width: fit-content;
+            margin: 2rem auto;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #007BFF;
             text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .center-button:hover {
+            background-color: #0056b3;
         }
 
         footer {
@@ -207,7 +216,8 @@
             <li>Share your lists on social media to let others know your top recommendations.</li>
         </ul>
 
-        <p><a href="create_lists.html">Get Started with Your First List!</a></p>
+        <!-- Centered Button -->
+        <a href="create_lists.html" class="center-button">Get Started with Your First List!</a>
 
         <h2>Why Choose FavFlicks?</h2>
         <p>FavFlicks is designed for movie and TV enthusiasts who love to categorize and share their top picks with friends. Join a community that values your unique taste and discover recommendations you’ll enjoy!</p>
